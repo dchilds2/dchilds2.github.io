@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="not-detected" data-ua="browser-other os-windows-98 device-other os-v" style="background: #171d25;">
+	
+<!-- Mirrored from gyrosco.pe/features/helix/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Oct 2017 17:31:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Uw4GVFVbGwYDVlJWAwQ="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,n,e)])}catch(s){try{i("ierr",[s,c.now(),!0])}catch(u){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t){i("err",[t,c.now()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,n,e){u&&(d+=1)}),s.on("fn-err",function(t,n,e){u&&(this.thrown=!0,o(e))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("../../index.html")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"0b3852d2d0","agent":"","transactionName":"YQdXYxBRVkVRAk0NXFhNc0IMU0xfXw8WFEZUDlxUTEZRU0cSAwxWWgtN","applicationID":"5323445","errorBeacon":"bam.nr-data.net","applicationTime":58}</script>
+		<title>Gyroscope</title>
+
+		
+		
+		<script type="text/javascript" src="../../../media.gyrosco.pe/javascript/libraries.js"></script>
+		<script type="text/javascript" src="../../../media.gyrosco.pe/javascript/gyroscope.global4a8a.js?c"></script>
+		
+		<script type="text/javascript" src="../../../media.gyrosco.pe/javascript/gyroscope.apps.js"></script>
+
+		
+<style type="text/css">
+	@font-face {
+		font-family: 'D';
+		src: url(http://media.gyrosco.pe/fonts/DPro-Regular.woff) format('woff');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'D';
+		src: url(http://media.gyrosco.pe/fonts/DPro-Medium.woff) format('woff');
+		font-weight: 500;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'D';
+		src: url(http://media.gyrosco.pe/fonts/DPro-Bold.woff) format('woff');
+		font-weight: 600;
+		font-style: normal;
+	}
+</style>
+
+
+		<link rel="stylesheet" href="../../../media.gyrosco.pe/css/global8277.css?d" />
+		<link rel="stylesheet" href="../../../media.gyrosco.pe/css/apps.css" />
+
+		<link rel="shortcut icon" href="../../../media.gyrosco.pe/images/icons/favicon.ico" sizes="16x16 24x24 32x32" />
+		<link rel="apple-touch-icon" sizes="120x120" href="../../../media.gyrosco.pe/images/icons/120-centered.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="../../../media.gyrosco.pe/images/icons/180-centered.png" />
+		<link rel="apple-touch-startup-image" href="../../../media.gyrosco.pe/images/icons/startup.png" />
+
+		<meta name="description" content="Helix is a beautiful new way to keep track of your health and vitals, automatically powered by wearables and other devices." />
+		<meta property="og:image" content="https://media.gyrosco.pe/images/helix/screenshots/teaser.jpg" />
+		<meta property="fb:app_id" content="309431422557180" />
+
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=max-device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0, minimal-ui"/>
+		<meta name="format-detection" content="telephone=no">
+
+		
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@gyroscope_app">
+	<meta name="twitter:title" content="Helix Dashboard">
+	<meta name="twitter:description" content="A beautiful new way to keep track of your health and vitals, automatically powered by wearables and other devices.">
+	<meta name="twitter:image" content="https://media.gyrosco.pe/images/helix/screenshots/teaser.jpg">
+
+
+	</head>
+	<body class="not-loaded"><div id="device-info">
+		
+
+	<div class="globals">
+		<div class="background-photo unset" id="background-photo">
+	<div class="zoomer">
+		<div class="image">
+		</div>
+		<span class="shadowing"></span>
+	</div>
+</div>
+
+		
+
+		<div class="feedback-modal collapsed">
+			<div class="modal-background"></div>
+			<div class="feedback-form-container">
+
+	<div class="form-backdrop">
+		<span class="green"></span>
+	</div>
+
+	<div class="presend">
+
+		<div class="header">
+			<a class="close-modal close-button">
+				<span class="text">&times;</span>
+			</a>
+			
+				<h2>Send us a message</h2>
+			
+			<h2 class="sending-confirmation">Please wait, sending...</h2>
+			<h3>Please let us know anytime if you have any&nbsp;questions or&nbsp;feedback!</h3>
+
+		</div>
+
+		
+
+	</div>
+
+	<div class="postsend">
+
+		<div class="confirmation">
+			<h2>Your message has been sent!</h2>
+			<div class="action-buttons buttons">
+				<a class="close-modal button">
+					<span class="backdrop"></span>
+					<span class="label">Continue</span>
+				</a>
+				<a class="continue button transitioned" href="../../dashboard/index.html">
+					<span class="backdrop"></span>
+					<span class="label">Back to Dashboard</span>
+				</a>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+		</div>
+
+		
+
+
+
+	</div>
+
+
+
+		<main class="page" id="page">
+			
+
+			<div class="helix-content"><header class="app-header"><div class="header-backdrop"><span class="image"></span></div><div class="container"><a class="back-button" href="../../pro/index.html"></a><div class="guest-links"><a href="../../index.html">Gyroscope</a><a href="../../app/index.html" class="transitioned">iPhone App</a></div><div class="app-info"><span class="app-icon"></span><div class="text"><h3>Profile Theme</h3><h1>Helix Theme</h1><h2>A dashboard for everything about your body</h2></div></div><div class="app-actions"><span class="actions-backdrop"></span><div class="buttons"><a href="../../login/index5ba4.html?next=/features/helix/" class="logged-out full button"><span class="backdrop"></span><span class="label">Log in to Start</span></a></div><div class="text"><p>
+					
+						This feature is part of Gyroscope Pro.<br />
+						
+							Please&nbsp;log in to get started.
+						
+					
+				</p></div></div></div></header><div class="main-content"><div class="container"><div class="full segment"><div class="text"><h1>See everything about your day in one place</h1></div><div class="sections-breakdown"><div class="section"><span class="brain helix-icon"></span><h2>Mind</h2><ul><li>Sleep</li><li>Computer</li><li>Music</li></ul></div><div class="section"><span class="heart helix-icon"></span><h2>Heart</h2><ul><li>Heart Rate</li><li>Blood Pressure</li><li class="coming-soon">Cholesterol (coming&nbsp;soon)</li></ul></div><div class="section"><span class="core helix-icon"></span><h2>Core</h2><ul><li>Bodyweight</li><li>Bodyfat %</li><li class="coming-soon">Meals (coming&nbsp;soon)</li><li class="coming-soon">Blood levels (coming&nbsp;soon)</li></ul></div><div class="section"><span class="fitness helix-icon"></span><h2>Fitness</h2><ul><li>Daily Steps</li><li>Running</li><li>Biking</li><li>Workouts</li></ul></div><div class="section"><span class="places helix-icon"></span><h2>Travel</h2><ul><li>Places visited</li><li>Transportation</li></ul></div></div><a href="http://aprilzero.com/" target="_blank"><div class="graphic helix-ss-day"><span class="demo-overlay"><!-- <span class="title">aprilzero.com</span> --><span class="subtitle">Demo Site &middot; aprilzero.com</span></span></div></a></div><div class="pro-details"><div class="text"><h2>Exclusive Pro Feature</h2><p>Gyroscope Pro includes special themes like this one, the ability to set a custom domain, and many other special features.</p></div><div class="buttons"><a class="button crosszone" href="../../pro/index.html"><span class="backdrop"></span><span class="label">Learn More</span></a></div></div><div class="left segment"><div class="text"><span class="brain helix-icon"></span><h2>Brain Activity</h2><p>See the overview of mental activity, balancing sleep with
+				work, play and overall productivity.</p><h3>Requirements</h3><p>Rescuetime &mdash; a program that runs on your computer &amp; passively tracks of productivity and app usage.</p><p>Sleep Tracking &mdash; We support many of the most popular sleep trackers, hardware and software, through our Healthkit app.</p></div><div class="graphic helix-ss-brain"></div></div><div class="right segment"><div class="text"><span class="heart helix-icon"></span><h2>Heart Activity</h2><p>Keep your heart healthy and keep track of your recent activity. Resting heart rate is a good measure of general fitness, and heart rate during workouts show intensity.</p><p>For those who want to keep a closer eye on their cardiovascular health, we also integrate with Withing's bluetooth blood pressure monitor. We'll soon be adding other related data, like cholesterol levels.</p><h3>Suggested Devices</h3><p>We load heart rate data from the Fitbit Charge HR, Fitbit Surge, and Apple Watch. We recommend wearing them continuously, especially when sleeping, for the best data quality.</p></div><div class="graphic helix-ss-heart"></div></div><div class="left segment"><div class="text"><span class="core helix-icon"></span><h2>Core Status</h2><p>Helix gives you easy access to your weight and other vitals. You can manually import weight, but we recommend using a wifi scale for the most detailed data.</p><p>We build a beautiful graph of your weight changes, so you can easily keep track of whether you're hitting your goals. Bodyweight doesn't tell the whole story, so we also support bodyfat percent. We will soon be adding more food and nutrient based stats in addition to weight.</p><h3>Suggested Devices</h3><p>We highly recommend the Fitbit Aria scale. It is a magical experience to check your weight and instantly see it updated on the website. We also integrate with the Withings Wifi scales.</p></div><div class="graphic helix-ss-core"></div></div><div class="right segment"><div class="text"><span class="fitness helix-icon"></span><h2>Fitness History</h2><p>Keep track of your steps and other physical activity. See your latest stats, and a monthly overview to make sure you are hitting your intended goals.</p><h3>How it works</h3><p>We load steps from a variety of sources, including Fitbit, Apple Watch, Moves &amp; Jawbone. Even if you don't have any fitness trackers, our iPhone app will be enough to get started.</p><p> We also show when you did other physical activity, like running, cycling, or going to the gym (via checkins).</p></div><div class="graphic helix-ss-fitness"></div></div><div class="left segment"><div class="text"><span class="places helix-icon"></span><h2>Location Tracking</h2><p>The places you visit add a lot of context to the other data points we collect. We can correlate that your heart rate was high while you were at the gym, or deduce that you ate sushi 5 times this week based on the types of places you visited.</p><p>See a map of everywhere you visited each month, and an overview of how you traveled around town.</p><h3>Requirements</h3><p>Moves &mdash; a program that automatically tracks your location in the background.</p><p>Foursquare &mdash; use their Swarm app to check in to each place you visit for it to show up on Gyroscope.</p></div><div class="graphic helix-ss-places"></div></div><div class="full segment"><div class="how-it-works"><div class="healthkit-app"><div class="text"><h2>Powered by</2><div class="iphone-app image"></div><h3>Gyroscope App</h3><p>Our new iPhone app automatically syncs data from Healthkit like steps, heart rate, sleep and workouts.</p><div class="buttons"><a class="button transitioned" href="../../app/index.html"><span class="backdrop"></span><span class="label">See the app</span></a></div></div></div><div class="devices-list"><h2 class="secondary">Other recommended devices</h2><div class="device"><div class="fitbit-scale image"></div><h3>Fitbit Scale</h3><p>Automatically checks your weight &amp; bodyfat &amp; syncs it to Gyroscope. Highly recommended!</p></div><div class="device"><div class="fitbit-band image"></div><h3>Fitbit HR</h3><p>Use a Fitbit Surge or Fitbit Charge HR to track your heart rate and steps. Sleep support coming soon!</p></div><div class="device"><div class="apple-watch image"></div><h3>Apple Watch</h3><p>We integrate with Healthkit to automatically get your heart rate, steps and other health data.</p></div><div class="device"><div class="sense image"></div><h3>Sense</h3><p>We integrate with the Sense sleep tracker by Hello, through our Healthkit integration.</p></div><div class="device"><div class="withings-bp image"></div><h3>Withings</h3><p>We integrate with the Withings blood pressure monitor to easily keep track of your cardio health.</p></div></div></div></div><div class="cta full centered segment"><span class="cta-backdrop"></span><div class="centered text"><h1>Ready to try it out?</h1><h2>This feature is part of Gyroscope Pro!</h2></div><div class="buttons"><a class="button" href="../../login/index5ba4.html?next=/features/helix/"><span class="backdrop"></span><span class="label">Log in to start</span></a><a class="learn-more crosszone button" href="../../pro/index.html"><span class="backdrop"></span><span class="label">Pro Features</span></a><a class="learn-more button" href="http://aprilzero.com/" target="_blank"><span class="backdrop"></span><span class="label">See demo</span></a></div></div><div class="faqs"><h2>Frequently Asked Questions</h2><div class="question"><h3>What if I don't have any&nbsp;wearables?</h3><p>That is fine, you can still use many of the features! Besides the detailed heart rate tracking, most of our data is actually powered by free apps that run on your phone and computer. Even better, they only take a few minutes to install &amp; set up.</p><p>A combination of our Healthkit app on your phone, Rescuetime on your computer, and the Moves app will get you 75% of the data needed.</p></div><div class="question"><h3>Will others be able to see my&nbsp;data?</h3><p>By default, Gyroscope accounts are 100% private and only you can see your data. If you want others to have access, you can add them as a friend on Gyroscope and they'll also be able to see your whole profile.</p><p>If you want sharing to be even more effortless and transparent, you can make your account public in <a href="../../settings/index.html">account settings.</a></p></div><div class="question"><h3>Does this work with the Sense sleep&nbsp;tracker?</h3><p>Yes, through our Healthkit integration. You will need to enable the "Sync with Health" setting in the Sense app settings, and set up our <a href="../../app/index.html">new Health app</a> to sync Healthkit data to Gyroscope.</p><p>We support a wide variety of other devices and apps&mdash;as long as they share the sleep or heart rate info to Healthkit, our iPhone app will sync it to Gyroscope.</p></div><div class="question"><h3>I don't want people to see my locations / I only want to share my&nbsp;running</h3><p>We have a Pro feature called Vault which will let you hide your locations, weight or age from everyone else.</p><p>To allow more granular and curated sharing of data, we've been working on our <a href="../../app/index.html">new iPhone apps,</a> which allow you to save and share specific cards highlighting different aspects of your data.</p></div><div class="question"><h3>How often does it&nbsp;update?</h3><p>It depends on the datapoint and service, but between every few minutes to every few hours. Occasionally things can get delayed and take a few hours to show up. </p><p>Your data won't change in realtime, but we will usually have a recent measurement. Some things require a manual sync &mdash; like Fitbit, some sleep trackers, etc. and others like Healthkit require your phone to be unlocked and running, so there may be some manual intervention needed to keep things updated. However, our goal is to keep things as passive and automated as possible.</p><p>Please note that Moves app needs locations to <a href="https://blog.gyrosco.pe/oh-the-places-you-ll-go-effortlessly-track-your-life-using-moves-gyroscope-6a5de9cd4dc3#.n53khazbz" target="_blank">be properly identified</a> before they will show up.</p></div></div></div></div></div>
+
+			<input class="body-class" type="hidden" value="apps helix overview logged-out" data-section="helix" data-page="overview" data-level="0" data-zone="apps" />
+
+
+			
+		</main>
+
+		
+
+		
+		<div class="hidden" id="page-cache"></div>
+<div class="hidden" id="l1-cache"></div>
+<div class="hidden" id="l2-cache"></div>
+
+		
+	
+		<script type="text/javascript">
+			!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
+				analytics.load("hapgEmn8dEc2BMAq0XTgYYmlGjJ5YYr2");
+				
+			}}();
+		</script>
+
+		<script>
+			!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+			n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+			n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+			t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+			document,'script','../../../connect.facebook.net/en_US/fbevents.js');
+
+			fbq('init', '163270344070251');
+			fbq('track', "PageView");</script>
+			<noscript><img height="1" width="1" style="display:none"
+			src="../../../www.facebook.com/tr9c0a.gif?id=163270344070251&amp;ev=PageView&amp;noscript=1"
+		/></noscript>
+
+	
+
+
+		
+		
+
+		
+
+		
+
+		<script type="text/javascript">
+	// BEGIN - Javascript CSRF (security) integration
+	function csrfSafeMethod(method) {
+		return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+	}
+	function getCookie(name) {
+		var cookieValue = null;
+		if (document.cookie && document.cookie != '') {
+			var cookies = document.cookie.split(';');
+			for (var i = 0; i < cookies.length; i++) {
+				var cookie = jQuery.trim(cookies[i]);
+				// Does this cookie string begin with the name we want?
+				if (cookie.substring(0, name.length + 1) == (name + '=')) {
+					cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+					break;
+				}
+			}
+		}
+		return cookieValue;
+	}
+	$.ajaxSetup({
+		beforeSend: function(xhr, settings) {
+			if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+				xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));
+			}
+		}
+	});
+	// END - Javascript CSRF (security) integration
+</script>
+
+
+		
+		<script type="text/javascript">
+			$(function() {
+				window.gyroscope = new GyroscopeBase();
+				gyroscope.init('apps', 'helix', 'overview');
+			});
+		</script>
+		
+
+	</div></body>
+
+<!-- Mirrored from gyrosco.pe/features/helix/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Oct 2017 17:31:28 GMT -->
+</html>
+
